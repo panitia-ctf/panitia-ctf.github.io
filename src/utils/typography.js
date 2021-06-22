@@ -19,7 +19,8 @@ const customTheme = {
       color: "var(--textTitle)",
     },
     h2: {
-      marginTop: "5%",
+      marginTop: "8%",
+      marginBottom: "2%",
     },
     a: {
       color: "var(--textLink)",

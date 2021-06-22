@@ -9,9 +9,9 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: `G-YQGCTT659B`,
+        trackingIds: [`G-YQGCTT659B`],
       },
     },
     `gatsby-plugin-dark-mode`,
