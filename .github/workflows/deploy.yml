@@ -1,11 +1,18 @@
 name: Build and Deploy
+
 on:
   schedule:
-    - cron: "0 0 * * *" # Every day at midnight.
-  workflow_dispatch:
+    - cron: "0 0 * * *"
   push:
     branches:
       - dev
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: 'Gass deploy??'
+        required: true
+        default: 'gasss'
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
