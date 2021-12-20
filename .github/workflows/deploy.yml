@@ -1,8 +1,8 @@
-name: Build and Deploy
+iname: Build and Deploy
 
 on: 
   schedule:
-   - cron: "0 0 * * *"
+   - cron: "0 * * * *"
 
 jobs:
   build-and-deploy:
