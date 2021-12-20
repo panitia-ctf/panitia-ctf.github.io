@@ -1,17 +1,8 @@
 name: Build and Deploy
 
-on:
+on: 
   schedule:
-    - cron: "0 0 * * *"
-  push:
-    branches:
-      - dev
-  workflow_dispatch:
-    inputs:
-      deploy:
-        description: 'Gass deploy??'
-        required: true
-        default: 'gasss'
+   - cron: "0 0 * * *"
 
 jobs:
   build-and-deploy:
