@@ -6,6 +6,7 @@ import SEO from "../components/SEO"
 import { rhythm } from "../utils/typography"
 import { css } from "@emotion/react"
 import { withPrefix } from "gatsby"
+import "katex/dist/katex.min.css"
 
 export default function BlogPost({ data, pageContext, location }) {
   const { previousPost, nextPost } = pageContext
