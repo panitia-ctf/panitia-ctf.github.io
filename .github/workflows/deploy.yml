@@ -2,7 +2,10 @@ iname: Build and Deploy
 
 on: 
   schedule:
-   - cron: "0 * * * *"
+    - cron: "0 0 * * *"
+  push:
+    branches:
+      - dev
 
 jobs:
   build-and-deploy:
